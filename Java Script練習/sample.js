@@ -24,7 +24,7 @@ var nextBtn = document.getElementById('nextBtn');
 var title = document.getElementById('title');
 
 //現在のインデックスを保存するための変数
-var currentIndex =
+var currentIndex = 0;
 /*===
 *関数の定義
 *==*/
@@ -32,8 +32,19 @@ var currentIndex =
 //指定の画像の表示を切り替える関数
 function showPhoto(index){
   //すべての画像を非表示
+  for (var i = 0; i < photoLenght; i++){
+    photoList[i].elem.style.display ='none';
+  }
 
-}
+  //表示する対象の要素を取得
+  var targetPhoto = photoList[index];
+
+  //タイトルの表示
+  var viewNumber = index +1;
+  title.innerHTML = '[' +viewNumber + '] ' + targetPhoto.title;
+  //画像の表示
+  targetPhoto.elem.style.display ='inline';
+
   }
 ]
 }
