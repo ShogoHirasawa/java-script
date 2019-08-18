@@ -44,7 +44,13 @@ function showPhoto(index){
   title.innerHTML = '[' +viewNumber + '] ' + targetPhoto.title;
   //画像の表示
   targetPhoto.elem.style.display ='inline';
+}
 
-  }
+/*==
+*イベントの設定
+*==*/
+
+// nextボタンを押した時の処理
+next
 ]
 }
