@@ -51,6 +51,40 @@ function showPhoto(index){
 *==*/
 
 // nextボタンを押した時の処理
-next
-]
-}
+nextBtn.onclic = function(){
+  //表示する画像のインデックスを計算
+  currenIndex++;
+  if (currenIndex === photoLengh){
+    currentIndex = 0;
+  }
+
+  //画像の切り替え
+  showPhoto(currentIndex);
+};
+
+/*==
+*初期化処理
+*==*/
+
+//img要素をHTMLに追加
+var item, img;
+for (var i = 0; i < photoLengh; i++){
+  item= photoLis[i];
+
+  //img要素の作成
+  img = document.createElement('img');
+
+  //作成したimg要素に属性を設定
+  img.src = item.src;
+  img.alt = item.title;
+
+  //作成したimg要素をHTMLに追加
+  photo.appendChild(img);
+
+  //作成したimg要素を保存
+  item.elem = img；
+  ｝
+
+//初期表示のためにshowPhoto関数を実行する
+showPhoto(crrentIndex);
+};
