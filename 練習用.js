@@ -95,3 +95,18 @@ for (var i = 0; i < 3; i ++){
     value = fruit[i];
     console.log(value)
 }
+
+//関数の定義
+function add(){
+  var a = 10;
+  var b = 20;
+  var result = a+b;
+  console.log(result);
+}
+
+//関数の呼び出し
+add();
+
+var person = {
+  name:
+}
