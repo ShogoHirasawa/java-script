@@ -108,5 +108,16 @@ function add(){
 add();
 
 var person = {
-  name:
+  name:'鈴木一郎'
+  age:20
+  say: function(){
+    console.log('こんにちは！')
+
+  }
+function add(a, b){
+  var result = a + b;
+  console.log(result);
 }
+
+add(1, 1);
+add(10, 20);
