@@ -121,3 +121,8 @@ function add(a, b){
 
 add(1, 1);
 add(10, 20);
+
+window.alert('hello world');
+
+var url = location.href;
+console.log(url);
